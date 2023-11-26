@@ -7,7 +7,7 @@ The app used to calculate your body mass index(BMI),using the approved formula.
 
 ![PHOTO-2023-11-27-00-01-18](https://github.com/isaacjayden24/bmicalculator/assets/113999137/fd918b0c-2485-44e9-a66e-fa55c3215b55)
 
-<img src="https://github.com/isaacjayden24/bmicalculator/assets/113999137/505db4de-4f89-446c-a8d3-e58843ec8152" width="300" height="400">
+<img src="https://github.com/isaacjayden24/bmicalculator/assets/113999137/505db4de-4f89-446c-a8d3-e58843ec8152" width="300" height="500">
 
 ![PHOTO-2023-11-27-00-01-48](https://github.com/isaacjayden24/bmicalculator/assets/113999137/dc719428-36ec-454c-8f6c-7f4ec519c470)
 
