@@ -16,9 +16,9 @@ The app used to calculate your body mass index(BMI),using the approved formula.
 
 
 ## Tech stack
--kotlin:a cross-platform ,statically typed, general-purpose programming language with type interface
+-[Kotlin](https://kotlinlang.org/):a cross-platform ,statically typed, general-purpose programming language with type interface
 
--RecyclerView:Used to display a list of items in android apps
+-[RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview):Used to display a list of items in android apps
 
 - Gradle: [https://gradle.org/](https://gradle.org/)
 
