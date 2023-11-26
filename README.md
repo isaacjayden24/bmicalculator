@@ -10,8 +10,8 @@ The app used to calculate your body mass index(BMI),using the approved formula.
 
 <img src="https://github.com/isaacjayden24/bmicalculator/assets/113999137/505db4de-4f89-446c-a8d3-e58843ec8152" width="300" height="200">
 
+![PHOTO-2023-11-27-00-01-48](https://github.com/isaacjayden24/bmicalculator/assets/113999137/dc719428-36ec-454c-8f6c-7f4ec519c470)
 
-<img src="https://github.com/isaacjayden24/bmicalculator/assets/113999137/dc719428-36ec-454c-8f6c-7f4ec519c470" width="300" height="200">
 
 
 
