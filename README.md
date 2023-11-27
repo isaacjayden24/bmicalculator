@@ -1,6 +1,6 @@
 # BMI CALCULATOR APP
 
-The app used to calculate your body mass index(BMI),using the approved formula.
+The app is used to calculate your body mass index(BMI),using the approved formula.
 
 #FINAL APP
    #screenshots
