@@ -1,0 +1,122 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/bmi_Calculate"
+            android:layout_width="162dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginEnd="53dp"
+            android:layout_marginBottom="53dp"
+            android:layout_toStartOf="@+id/button_next"
+            android:background="@android:color/holo_orange_dark"
+            android:text="@string/calculate_button"
+            android:textColor="#4E342E" />
+
+        <Button
+            android:id="@+id/button_next"
+            android:layout_width="142dp"
+            android:layout_height="61dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="33dp"
+            android:layout_marginBottom="48dp"
+            android:text="Next" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="240dp"
+            android:layout_height="218dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="122dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ageinput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Age"
+                android:textColorHint="#757575" />
+
+            <EditText
+                android:id="@+id/heightinput"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableLeft="@drawable/heighticon"
+                android:hint="HEIGHT(M)"
+                android:textColorHint="#757575" />
+
+            <EditText
+                android:id="@+id/weightinput"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:drawableLeft="@drawable/weighticon"
+                android:hint="WEIGHT(KG)"
+                android:textColorHint="#757575" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/resultdisplay"
+            android:layout_width="92dp"
+            android:layout_height="43dp"
+
+            android:layout_above="@+id/statusimage"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="92dp"
+            android:layout_marginBottom="81dp"
+            android:hint="Result:"
+            android:textColorHint="#757575" />
+
+
+        <TextView
+            android:id="@+id/someinformation"
+            android:layout_width="162dp"
+            android:layout_height="269dp"
+            android:layout_below="@+id/linearLayout"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="177dp"
+            android:layout_toStartOf="@+id/imageView"
+            android:hint="Display content here"
+            android:textColorHint="#757575" />
+
+        <ImageView
+            android:id="@+id/iconone"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/statusimage"
+            android:layout_width="159dp"
+            android:layout_height="128dp"
+            android:layout_above="@+id/button_next"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="86dp"
+            app:srcCompat="@drawable/download" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
