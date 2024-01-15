@@ -75,28 +75,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-//working on this function to display images accordingly
-   /* fun displayweightImages(result:Double){
-        val result=weightCalculation()
-        //reference the image view
-        val imageDisplay:ImageView=findViewById(R.id.imageView)
-        when(result){
-            in 0.0..18.5->imageDisplay.setImageResource(R.drawable.image1)
-            in 18.5..24.9->imageDisplay.setImageResource(R.drawable.image2)
-            in 25.0..29.9->imageDisplay.setImageResource(R.drawable.image3)
-            else->imageDisplay.setImageResource(R.drawable.image5)
-        }
-    }*/
+
 
     private fun launchNext(){
         val listIntent =Intent(this,HealthyTipsActivity::class.java)
         startActivity(listIntent)
     }
 
-    private fun hideKeyboard() {
-        val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
-        imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
-    }
+
 
 
 }

@@ -11,7 +11,11 @@ The app is used to calculate your body mass index(BMI),using the approved formul
 
 ![PHOTO-2023-11-27-00-01-48](https://github.com/isaacjayden24/bmicalculator/assets/113999137/dc719428-36ec-454c-8f6c-7f4ec519c470)
 
+<img src="Docs/screenshots/weights.jpg" width="300px">
 
+<img src="Docs/screenshots/calculate.jpg" width="300px">
+
+<img src="Docs/screenshots/results.jpg" width="300px">
 
 
 
