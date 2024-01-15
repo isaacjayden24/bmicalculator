@@ -5,7 +5,7 @@ The app is used to calculate your body mass index(BMI),using the approved formul
 #FINAL APP
    #screenshots
 
-<img src="Docs/screenshots/weights.jpg" width="300px">
+<img src="Docs/screenshots/weights.png" width="300px">
 
 <img src="Docs/screenshots/calculate.jpg" width="300px">
 
