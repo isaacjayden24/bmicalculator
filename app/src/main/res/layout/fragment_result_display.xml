@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:orientation="vertical"
+    android:layout_margin="10dp"
+tools:context=".ResultDisplay"
+android:layout_height="match_parent">
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Your BMI:"
+    android:layout_gravity="center"
+    android:textSize="16sp"
+    android:layout_marginTop="20dp"
+    android:textColor="#0A1207"/>
+
+<TextView
+    android:id="@+id/bmiDisplay"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="22.3"
+    android:layout_gravity="center"
+    android:textSize="64sp"
+    android:textStyle="bold"
+    android:layout_marginTop="20dp"
+    android:textColor="#519234"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <!-- Horizontal LinearLayout for TextViews -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- TextView for Blue Section -->
+            <TextView
+                android:id="@+id/textViewBlue"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="under weight"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+            <!-- TextView for Green Section -->
+            <TextView
+                android:id="@+id/textViewGreen"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="normal weight"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+            <!-- TextView for Yellow Section -->
+            <TextView
+                android:id="@+id/textViewYellow"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="over-weight"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+            <!-- TextView for Red Section -->
+            <TextView
+                android:id="@+id/textViewRed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="obesity"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <!-- ImageView for the Drawable -->
+        <ImageView
+            android:id="@+id/progressIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/bar"
+            android:contentDescription="BMI Range Bar"/>
+
+    </LinearLayout>
+
+
+
+
+<com.google.android.material.divider.MaterialDivider
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:layout_height="wrap_content"/>
+
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_marginTop="20dp"
+    android:layout_marginBottom="16dp">
+
+    <!-- Weight -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/weightDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="65 kg"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <!-- Height -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/heightDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="170 cm"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <!-- Age -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginEnd="16dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/ageDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="26"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <!-- Gender -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/genderDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_green_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
+
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textColor="@android:color/darker_gray"
+    android:textSize="16sp"
+    android:layout_marginTop="30dp"
+    android:text="Healthy weight for the height:"/>
+
+
+
+<TextView
+    android:id="@+id/healthyWeightForTheHeight"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:textColor="#519234"
+    android:textStyle="bold"
+    android:layout_marginTop="30dp"
+    android:textSize="16sp"
+    android:text="53.5-73.4:"/>
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/healthBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Health"
+            android:padding="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/rounded_button"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

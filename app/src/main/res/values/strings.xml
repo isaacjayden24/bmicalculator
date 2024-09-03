@@ -2,15 +2,16 @@
     <string name="app_name">BMI CALCULATOR</string>
     <string name="calculate_your_weight">CALCULATE BMI</string>
     <string name="weight_calculate">Enter your weight(KG)</string>
-    <string name="height_calculate">Enter your height(M)</string>
+    <string name="height_calculate">Enter your height(CM)</string>
     <string name="bmi_result">Your result</string>
     <string name="calculate_button">  COMPUTE </string>
     <string name="bmi_title">TIP: </string>
     <string name="bmi_content">CONTENT: </string>
-    <string name ="image_display">Image display</string>
-    <string name ="next_button">Next</string>
+    <string name="image_display">Image display</string>
+    <string name="next_button">Next</string>
     <string name="result_output">Result:</string>
-
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

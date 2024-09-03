@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/calculatorFragment2">
+    <fragment
+        android:id="@+id/calculatorFragment2"
+        android:name="com.example.bmicalculator.CalculatorFragment"
+        android:label="fragment_calculator"
+        tools:layout="@layout/fragment_calculator" >
+        <action
+            android:id="@+id/action_calculatorFragment2_to_resultDisplay2"
+            app:destination="@id/resultDisplay2" />
+        <action
+            android:id="@+id/action_calculatorFragment2_to_healthyDietTipsFragment2"
+            app:destination="@id/healthyDietTipsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/healthyDietTipsFragment2"
+        android:name="com.example.bmicalculator.HealthyDietTipsFragment"
+        android:label="fragment_healthy_diet_tips"
+        tools:layout="@layout/fragment_healthy_diet_tips" />
+    <fragment
+        android:id="@+id/resultDisplay2"
+        android:name="com.example.bmicalculator.ResultDisplay"
+        android:label="fragment_result_display"
+        tools:layout="@layout/fragment_result_display" >
+        <action
+            android:id="@+id/action_resultDisplay2_to_healthyDietTipsFragment2"
+            app:destination="@id/healthyDietTipsFragment2" />
+    </fragment>
+</navigation>

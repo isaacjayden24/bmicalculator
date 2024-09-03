@@ -1,104 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-
-<ScrollView
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0000"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clipChildren="false"
-        android:clipToPadding="false"
-        android:orientation="vertical"
-        android:padding="24dp"
-        android:paddingTop="16dp">
-
-        <ImageView
-            android:layout_width="378dp"
-            android:layout_height="210dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="4dp"
-            android:layout_marginBottom="16dp"
-            app:srcCompat="@drawable/weight"
-            android:contentDescription="@string/image_display" />
-
-        <TextView
-            android:layout_width="150dp"
-            android:layout_height="32dp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="132dp"
-            android:text="@string/app_name"
-            android:textStyle="bold"
-            android:textAllCaps="true"
-            android:textSize="16sp"
-            android:textColor="@color/navy"/>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/weight_taken"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:hint="@string/weight_calculate">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/weightinput"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:errorEnabled="true"
-                />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/height_text_input"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="4dp"
-            android:hint="@string/height_calculate">
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/heightinput"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColorHint="#616161" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/bmi_Calculate"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:text="@string/calculate_button" />
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/button_next"
-                style="@style/Widget.MaterialComponents.Button.TextButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="12dp"
-                android:layout_toStartOf="@id/bmi_Calculate"
-                android:text="@string/next_button" />
-
-            <TextView
-                android:id="@+id/resultdisplay"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/result_output" />
-
-        </RelativeLayout>
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:defaultNavHost="true"
+        app:navGraph="@navigation/nav_graph" />
 
 
-    </LinearLayout>
-
-
-</ScrollView>
-</layout>
+</androidx.constraintlayout.widget.ConstraintLayout>

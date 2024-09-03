@@ -1,24 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- item_tip.xml -->
 
-<LinearLayout
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="8dp">
+    android:layout_margin="8dp"
+    android:padding="16dp"
+    android:backgroundTint="?attr/colorSurface"
+    android:radius="8dp"
+    android:strokeColor="?attr/colorPrimary">
 
-    <TextView
-        android:id="@+id/bmi_title"
-        android:layout_width="208dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textStyle="bold" />
+        android:padding="16dp"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/bmi_content"
-        android:layout_width="336dp"
-        android:layout_height="124dp"
-        android:textSize="14sp" />
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bmi_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold" />
 
-</LinearLayout>
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/bmi_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
