@@ -6,7 +6,7 @@
     app:startDestination="@id/calculatorFragment2">
     <fragment
         android:id="@+id/calculatorFragment2"
-        android:name="com.example.bmicalculator.CalculatorFragment"
+        android:name="com.projectbmi.bmicalculator.CalculatorFragment"
         android:label="fragment_calculator"
         tools:layout="@layout/fragment_calculator" >
         <action
@@ -18,12 +18,12 @@
     </fragment>
     <fragment
         android:id="@+id/healthyDietTipsFragment2"
-        android:name="com.example.bmicalculator.HealthyDietTipsFragment"
+        android:name="com.projectbmi.bmicalculator.HealthyDietTipsFragment"
         android:label="fragment_healthy_diet_tips"
         tools:layout="@layout/fragment_healthy_diet_tips" />
     <fragment
         android:id="@+id/resultDisplay2"
-        android:name="com.example.bmicalculator.ResultDisplay"
+        android:name="com.projectbmi.bmicalculator.ResultDisplay"
         android:label="fragment_result_display"
         tools:layout="@layout/fragment_result_display" >
         <action
