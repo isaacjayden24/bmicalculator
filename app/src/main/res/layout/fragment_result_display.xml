@@ -48,7 +48,7 @@ android:layout_height="match_parent">
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="under weight"
-                android:textColor="@android:color/black"
+                android:textColor="?attr/color"
                 android:textSize="14sp"/>
 
             <!-- TextView for Green Section -->
@@ -59,7 +59,7 @@ android:layout_height="match_parent">
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="normal weight"
-                android:textColor="@android:color/black"
+                android:textColor="?attr/color"
                 android:textSize="14sp"/>
 
             <!-- TextView for Yellow Section -->
@@ -70,7 +70,7 @@ android:layout_height="match_parent">
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="over-weight"
-                android:textColor="@android:color/black"
+                android:textColor="?attr/color"
                 android:textSize="14sp"/>
 
             <!-- TextView for Red Section -->
@@ -81,7 +81,7 @@ android:layout_height="match_parent">
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="obesity"
-                android:textColor="@android:color/black"
+                android:textColor="?attr/color"
                 android:textSize="14sp"/>
         </LinearLayout>
 
@@ -262,8 +262,9 @@ android:layout_height="match_parent">
             android:layout_centerHorizontal="true"
             android:layout_marginBottom="16dp"
             android:layout_marginTop="120dp"
+            android:backgroundTint="?attr/colorPrimaryDark"
             android:background="@drawable/rounded_button"
-            android:textColor="@android:color/white"/>
+            />
 
     </RelativeLayout>
 

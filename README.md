@@ -1,49 +1,59 @@
+
+![BMI CALCULATOR](Docs/screenshots/weights.png "BMI CALCULATOR")
+
+
 # BMI CALCULATOR APP
 
-The app is used to calculate your body mass index(BMI),using the approved formula.
+**BMI Calculator App** is a modern Android application developed in **Kotlin**. It calculates the **Body Mass Index (BMI)** based on the user’s weight, height, and age, and offers **diet suggestions**.
 
-#FINAL APP
- #screenshots
-
-<img src="Docs/screenshots/weights.png" width="300px">
-
-<img src="Docs/screenshots/calculate.jpg" width="300px">
-
-<img src="Docs/screenshots/results.jpg" width="300px">
+Published on the **Huawei AppGallery**:  
+🔗 [Download from Huawei AppGallery](https://appgallery.huawei.com/app/C112270379).
 
 
+ ## screenshots
 
-## Tech stack
--[Kotlin](https://kotlinlang.org/):a cross-platform ,statically typed, general-purpose programming language with type interface
+<img src="Docs/screenshots/home.jpg" width="250px"> <img src="Docs/screenshots/homedark.jpg" width="250px">
 
--[RecyclerView](https://developer.android.com/guide/topics/ui/layout/recyclerview):Used to display a list of items in android apps
+<img src="Docs/screenshots/results.jpg" width="250px"> <img src="Docs/screenshots/resultsdark.jpg" width="250px">
 
-- Gradle: [https://gradle.org/](https://gradle.org/)
+<img src="Docs/screenshots/suggestions.jpg" width="250px"> <img src="Docs/screenshots/suggestionsdark.jpg" width="250px">
 
-##Dependencies
 
-All the dependencies (external libraries) are defined in the-Gradle buildSrc folder.This is to allow to easily manage dependencies and use the same dependency version across all modules
+## Build and Run NewsApp
 
-## License
+1. Clone the repository.
 
-MIT License
+2. Open the project in Android Studio.
 
-Copyright (c) 2023 Isaac kariithi
+3. Sync the Gradle files and run the app module
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+## Built with 
+- [Kotlin](https://kotlinlang.org/) – Modern programming language for Android development
+- [MVVM Architecture](https://developer.android.com/jetpack/guide) – Separation of concerns with ViewModel and LiveData
+- [LiveData](https://developer.android.com/topic/libraries/architecture/livedata) – Lifecycle-aware data holder
+- [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel) – UI-related data holder that survives configuration changes
+- [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) – Powerful charting library for Android
+- [Material Design](https://m3.material.io/) – UI/UX components for modern Android apps
+- [Huawei AppGallery](https://developer.huawei.com/consumer/en/appgallery) – Platform where the app is published
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### ✨ Features
+
+- 🧮 **Accurate BMI Calculation**  
+  Calculate BMI instantly based on your height, weight, and age.
+
+- 📊 **Interactive Chart Visualization**  
+  Visualize your BMI category .
+
+- 🔄 **Live Data Updates**  
+  Leverages **LiveData** and **ViewModel** for seamless, real-time UI updates.
+
+- 🍎 **Diet Recommendations**  
+  Get health and diet suggestions.
+
+- 📱 **Optimized for Huawei Devices**  
+  Fully tested and published on the **Huawei Developer Console** for a smooth experience on Huawei smartphones.
+
+
+##  Contributing
+Contributions are welcome! Feel free to fork the repo, open issues, and submit pull requests

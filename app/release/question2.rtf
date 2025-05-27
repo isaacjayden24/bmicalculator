@@ -1,0 +1,103 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Create the LEX (lexical analyzer) file: 
+\f2 counta.l
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+%\{\
+#include "y.tab.h"\
+%\}\
+\
+// Token definitions\
+%%\
+a   \{ return 'a'; \}  // Recognize 'a'\
+b   \{ return 'b'; \}  // Recognize 'b'\
+\\n  \{ return '\\n'; \} // Handle newlines\
+[ \\t] \{ /* Ignore whitespace */ \}\
+.   \{ printf("Invalid character: %c\\n", yytext[0]); \}\
+\
+%%\
+\
+int yywrap() \{\
+    return 1; // Signal end of input\
+\}\
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Create the YACC (syntax analyzer) file: 
+\f2 counta.y\
+\
+\
+%\{\
+#include <stdio.h>\
+#include <stdlib.h>\
+\
+int count = 0; // Variable to count 'a's\
+%\}\
+\
+// Define tokens\
+%token a b\
+\
+%%\
+\
+// Grammar rules\
+S: a S  \{ count++; \}  // Increment count for every 'a'\
+ | b    \{ /* do nothing for 'b' */ \}\
+ ;\
+\
+%%\
+\
+// Main function\
+int main() \{\
+    printf("Enter a string (e.g., aababb): ");\
+    yyparse();\
+    printf("Number of 'a's: %d\\n", count);\
+    return 0;\
+\}\
+\
+// Error handling\
+void yyerror(const char *msg) \{\
+    fprintf(stderr, "Error: %s\\n", msg);\
+\}\
+\
+\
+\
+\
+
+\f1 Compile and Run the Interpreter\
+\
+#generate parser and scanner code\
+yacc -d counta.y  # Generates y.tab.c and y.tab.h\
+lex counta.l      # Generates lex.yy.c\
+\
+#compile the generated c files\
+gcc y.tab.c lex.yy.c -o counta -ll\
+\
+#Run the program\
+./counta\
+\
+
+\f2 \
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\
+\
+\
+\
+}
