@@ -1,4 +1,3 @@
-
 ![BMI CALCULATOR](Docs/screenshots/weights.png "BMI CALCULATOR")
 
 
