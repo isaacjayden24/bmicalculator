@@ -1,0 +1,2 @@
+*.kt linguist-detectable=true
+*.kt linguist-language=Kotlin
