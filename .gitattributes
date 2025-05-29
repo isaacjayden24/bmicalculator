@@ -1,2 +1,2 @@
-*.kt linguist-detectable=true
+*.rtf linguist-documentation
 *.kt linguist-language=Kotlin
